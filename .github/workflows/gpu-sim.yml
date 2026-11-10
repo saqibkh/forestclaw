@@ -9,6 +9,8 @@ name: CudaClaw on simulated H100
 
 on:
   workflow_dispatch:
+  push:
+    branches: [verify-gpu-sim]
   pull_request:
     paths:
       - "src/solvers/fc2d_cudaclaw/**"
